@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import NavBar from "../components/navbar"
 
 export default function Home() {
   return (
     <div className="container">
+      <NavBar/>
       <Head>
         <title>Nguyen Thu Thao's Blog</title>
         <link rel="icon" href="/favicon.ico" />
