@@ -1,184 +1,88 @@
-import Head from 'next/head'
-import NavBar from "../components/navbar"
+import Head from "next/head";
+import NavBar from "../components/navbar";
+import Layout from "../components/layout";
+import styles from "../styles/index.module.css";
 
 export default function Home() {
   return (
-    <div className="container">
-      <NavBar/>
-      <Head>
-        <title>Nguyen Thu Thao's Blog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div
+        className="container"
+        style={{ maxWidth: "100%", paddingTop: "6rem" }}
+      >
+        <NavBar />
+        <Head>
+          <title>Nguyen Thu Thao's Blog</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main>
-        <h1 className="title">
-          Chào mừng đến Blog của Nguyễn Thu Thảo!
-        </h1>
+        <main className={styles.indexmain}>
+          <h1 className={styles.title}>
+            Chào mừng đến với <br></br>Blog của Nguyễn Thu Thảo!
+          </h1>
+          <img
+            id={styles.avatar}
+            className={styles.borderstyle}
+            src="/avatar.jpg"
+          />
+          <br></br>
+          <h2 className={styles.title}>DRAMA NGHỀ NGHIỆP - TẬP 1</h2>
+          <h5 className={styles.title}>By Nguyễn Thu Thảo</h5>
+          <p className={styles.content}>
+            Tham gia facebook cũng được 9 năm rồi, này lần đầu tiên mình dành
+            hẳn một mớ thời gian để ngồi viết ra 1 cái sự kiện, bởi vì sao...
+            quá trời quá đất cái gọi là lòng người.
+          </p>
+          <p className={styles.content}>
+            Làm cái nghề DỊCH VỤ thì chẳng khác nào đi làm dâu trăm họ cả, đồng
+            ý là khách hàng bỏ tiền ra và mong muốn nhận được 1 dịch vụ tốt nhất
+            là chuyện hiển nhiên, đương nhiên và luôn luôn đúng trong mọi thời
+            đại, nhưng một vừa hai phải thì thôi, đừng có ăn gian nối dối, ăn có
+            nói không chứ, người sử dụng dịch vụ hay người cung cấp dịch vụ đều
+            là con người như nhau nên phải biết tôn trọng lẫn nhau chứ.
+          </p>
+          <p className={styles.content}>
+            Chị gái tên H có sử dụng dịch vụ của mình vào ngày 14/6, mình hẹn
+            chị gái 7 ngày sau có kết quả, đến ngày 15/6 (nghĩa là 1 ngày sau)
+            gọi nườm nượp cho mình hỏi rằng có kết quả chưa, ừ thì mình cũng rất
+            là thảo mai và nói là “Dạ chưa đâu ạ, có thì em sẽ báo chị ngay à,
+            có sớm thì em báo sớm để chị đỡ lo chứ”. Chị tìm đâu ra số cá nhân
+            của mình á, nhắn tin zalo cá nhân cho mình, hỏi này hỏi nọ, mình
+            nhiệt tình trả lời không sót một thứ gì, thấy chị nói chuyện cũng dễ
+            thương, mình cũng quý mến một tí, mình còn nhiệt tình tới nỗi...khi
+            vừa có kết quả của chị là mình gọi ngay để báo cho chị hay, giải
+            thích với chị này nọ cũng hơn 30 phút trò chuyện, chị ok ok cám ơn
+            em nhiều lắm nha, trời ơi mình happy hết sức, giống như mình vừa làm
+            chuyện gì đó để lại phúc đức 8 đời cho con cháu mình dậy đó.
+          </p>
+          <p className={styles.content}>
+            Đến hôm nay, 21h30 ngày 23/6 chị nhắn tin vào zalo công ty của mình
+            (mình sử dụng 2 zalo, 1 zalo số cá nhân và 1 zalo số công ty cấp)
+            bảo chị nhận được kết quả rồi, mà sao con bé kia nó không giải thích
+            một chút gì về kết quả cho chị cả, gửi cho chị tờ kết quả vậy sao
+            chị hiểu được.... Ơ HAY ... mình lục lại ký ức, hay mình bị bệnh
+            thần kinh phân liệt hay bị mất trí nhớ ta, chết chết sao mình có thể
+            thiếu sót tới vậy chứ, nghĩ ngợi một hồi thì mình biết chị gái này
+            là ai rồi, và mình rành về câu chuyện của chị ấy như thế nào, nếu
+            mình không bị mất trí nhớ thì chắc chị bị khùng.
+          </p>
+          <p className={styles.content}>
+            Mình bị tổn thương sâu sắc luôn í, cái nghề mình đang làm nó thật sự
+            kinh khủng.
+          </p>
+        </main>
 
-        <p className="description">
-          Trang blog này là nơi tôi chia sẻ cho các bạn những kiến thức của tôi về mọi lĩnh vực đời sống mà tôi đúc kết được. Đây cũng là nơi giãy bày những tâm sự, mách nhỏ cho bạn đọc...
-        </p>
-
-        
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by Tam Tran and{' '}
-  <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          max-width: 1000px;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+        <footer className={styles.indexfooter}>
+          <a
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by Tam Tran and{" "}
+            <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          </a>
+        </footer>
+      </div>
+    </Layout>
+  );
 }

@@ -1,0 +1,48 @@
+.indexfooter {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexfooter img {
+    margin-left: 0.5rem;
+}
+.indexfooter a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 1em;
+}
+
+.indexmain{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#avatar {
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borderstyle {
+    border-radius: 50%;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: lightred;
+}
+
+.content{
+    text-align: justify;
+}
+
