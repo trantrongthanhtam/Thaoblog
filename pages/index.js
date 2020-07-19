@@ -6,9 +6,10 @@ import styles from "../styles/index.module.css";
 export default function Home() {
   return (
     <Layout>
+      <img className={styles.background} src="/background.jpg"></img>
       <div
         className="container"
-        style={{ maxWidth: "100%", paddingTop: "6rem" }}
+        style={{ maxWidth: "100%", padding: "0 0.5rem" }}
       >
         <NavBar />
         <Head>
@@ -17,16 +18,21 @@ export default function Home() {
         </Head>
 
         <main className={styles.indexmain}>
-          <h1 className={styles.title}>
-            Chào mừng đến với <br></br>Blog của Nguyễn Thu Thảo!
-          </h1>
+          <h2
+            className={styles.title}
+            style={{ margin: "5.5rem 0 3rem", color: "white" }}
+          >
+            Blog của Nguyễn Thu Thảo
+          </h2>
           <img
             id={styles.avatar}
             className={styles.borderstyle}
             src="/avatar.jpg"
           />
           <br></br>
-          <h2 className={styles.title}>DRAMA NGHỀ NGHIỆP - TẬP 1</h2>
+          <h2 className={(styles.title, styles.subtitle)}>
+            DRAMA NGHỀ NGHIỆP - TẬP 1
+          </h2>
           <h5 className={styles.title}>By Nguyễn Thu Thảo</h5>
           <p className={styles.content}>
             Tham gia facebook cũng được 9 năm rồi, này lần đầu tiên mình dành

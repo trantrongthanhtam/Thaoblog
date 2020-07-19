@@ -34,6 +34,8 @@
 
 .borderstyle {
     border-radius: 50%;
+    border: 0.1rem solid white;
+
 }
 
 .title {
@@ -41,8 +43,22 @@
     font-weight: bold;
     color: lightred;
 }
+.subtitle {
+    margin-top: 100px;
+    text-align: center;
+}
 
 .content{
     text-align: justify;
+}
+
+.background {
+    overflow: hidden;
+    width:1500px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 65.25px;
+    z-index: -1;
 }
 
