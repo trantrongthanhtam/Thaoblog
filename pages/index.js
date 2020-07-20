@@ -24,11 +24,15 @@ export default function Home() {
           >
             Blog của Nguyễn Thu Thảo
           </h2>
-          <img
-            id={styles.avatar}
-            className={styles.borderstyle}
-            src="/avatar.jpg"
-          />
+          <div className={styles.avatarholder}>
+            <div>
+              <img
+                id={styles.avatar}
+                className={styles.borderstyle}
+                src="/avatar.jpg"
+              />
+            </div>
+          </div>
           <br></br>
           <h2 className={(styles.title, styles.subtitle)}>
             DRAMA NGHỀ NGHIỆP - TẬP 1
